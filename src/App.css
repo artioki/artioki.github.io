@@ -1,0 +1,46 @@
+html,body,#root,.App{
+    position: relative;
+    height: 100%;
+
+}
+.App{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    padding:0px 20px;
+    flex: 1 0 auto;
+    background:#F4F7FB;
+
+}
+
+
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link.my-under {
+    border-bottom: 2px solid transparent;
+}
+.navbar-light .navbar-nav .nav-link.active.my-under{
+    color: #2375E1;
+    border-bottom: 2px solid #2375E1;
+}
+.navbar-light .navbar-nav .nav-link.my-under:hover{
+    color: #2375E1;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active.my,
+.navbar-light .navbar-nav .nav-link.my:hover{
+    
+    color: #2375E1;
+}
+
+
+

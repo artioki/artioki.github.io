@@ -1,0 +1,21 @@
+.boxColumn{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    width:calc(100% - 32px);
+    & .box_my{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin:24px 0px;
+
+
+        &:first-child{
+            margin-top: 24px;
+        }
+        &:last-child{
+            margin-bottom: 24px;
+        }
+    }
+}
