@@ -11,10 +11,10 @@ export const useRoutes = isAuthenticatied => {
         return (
             <Routes>
                 <Route path='*' element={<Layout/>}>|{" "}
-                    <Route path="home" element={<Home/>} exect/>
+                    <Route path="" element={<Home/>} exect/>
                     <Route path="map" element={<Map/>} exect/>
                     <Route path="timer" element={<Timer/>} exect/>
-                    <Route path="*" element={<Navigate to="/home" />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Route>
             </Routes>
         )

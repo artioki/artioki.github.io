@@ -26,10 +26,9 @@ const Maps = () => {
             <div className={css.box_my}>
               <MyAccordion title={"My home"}>
                 <YMaps  query={{ lang: 'en_RU' }}>
-
                   <div >
                     <Preloader is={map}/>
-                    <Map style={{margin:"auto",width: "600px", height: "300px"}} onLoad={ymaps => setmap(true)} defaultState={{ center: [56.751075, 37.200017], zoom: 16 }}>
+                    <Map style={{margin:"auto",width: "300px", height: "300px"}} onLoad={ymaps => setmap(true)} defaultState={{ center: [56.751075, 37.200017], zoom: 16 }}>
                       <Placemark geometry={[56.751075, 37.200017]} />
                     </Map>
                   </div>

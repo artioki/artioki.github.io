@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div style={{margin:"0px 32px",textAlign:"center"}}  className='navbar-fixed-bottom'>
-            Footer
+        <div style={{textAlign:"center"}}  className='navbar-fixed-bottom py-2'>
+            Создал Кузнецов Михаил
         </div>
     );
 }
