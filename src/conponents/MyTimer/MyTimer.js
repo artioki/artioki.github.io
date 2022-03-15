@@ -6,7 +6,7 @@ import MyAccordion from "../MyAccordion/MyAccordion";
 let i = 0;
 const MyTimer = ({ ismain }) => {
   const [second, setsecond] = useState(i);
-  function Update() {
+  function update() {
     setsecond((second) => second + 1);
     if (ismain) {
       i += 1;
@@ -14,8 +14,7 @@ const MyTimer = ({ ismain }) => {
   }
   useEffect(() => {
     const intervald = setInterval(() => {
-      // eslint-disable-next-line new-cap
-      Update();
+      update();
     }, 1000);
     return () => clearTimeout(intervald);
   }, []);

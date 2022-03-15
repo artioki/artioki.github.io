@@ -5,7 +5,7 @@ body,
   height: 100%;
 }
 
-.app {
+#app {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,8 @@ header {
   box-shadow: 0 0 16px rgb(0 0 0 / 10%);
 }
 
+
+/* Здесь я переопределял стили bootstrap. так как они импортируются и после используются в компанентах, я не нашел более легкого решения */
 .navbar-light .navbar-nav .nav-link.my-under {
   border-bottom: 2px solid transparent;
 }

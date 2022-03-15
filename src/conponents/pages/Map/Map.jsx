@@ -11,11 +11,11 @@ const Preloader = ({ is }) => {
   } else {
     return (
       <div
-        className={css.icon}
+        className={css["icon"]}
         style={{ margin: "auto", width: "300px", height: "300px" }}
       >
         <FontAwesomeIcon
-          className={css.iconAnimate}
+          className={css["icon-animate"]}
           icon="fa-solid fa-spinner"
         />
       </div>
@@ -28,8 +28,8 @@ const Maps = () => {
 
   return (
     <>
-      <div className={css.boxColumn}>
-        <div className={css.box_my}>
+      <div className={css["flex"]}>
+        <div className={css["box"]}>
           <MyAccordion title={"My home"}>
             <YMaps query={{ lang: "en_RU" }}>
               <div>

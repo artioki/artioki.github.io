@@ -25,13 +25,14 @@ const Styles = styled.div`
     padding-top: 0px;
   }
 `;
+
 const MyAccordion = ({ title, date, children }) => {
   return (
     <Styles>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            <div className={css.boxTitle}>
+            <div className={css["title"]}>
               <div>{title}</div>
               <div>{date ? date + " ago" : null}</div>
             </div>
@@ -42,6 +43,7 @@ const MyAccordion = ({ title, date, children }) => {
     </Styles>
   );
 };
+
 MyAccordion.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string,

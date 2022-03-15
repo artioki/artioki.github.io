@@ -15,10 +15,10 @@ const Home = () => {
     "Женщины-кошки также иногда изображаются в виде оборотней, но тем не менее, помогая людям, наделены добрыми качествами. Часто бывают волшебными помощниками героев в мифах и легендах. Как и лисы, девушки-кошки могут быть очень опасны. В человеческом облике демонстрируют сверхчеловеческую гибкость, подвижность и хитрость. Сохраняют кошачью расцветку тела. Также женщины-кошки в японской мифологии — это прекрасные девы, которые могут преобразовываться в кошек, в обмен на свою красоту.";
   return (
     <>
-      <div className={`${css.flexMain}`}>
-        <div className={`${css.boxColumn_2_2}`}>
-          <div className={`${css.box_my}`}>
-            <div className={`${css.profile}`}>
+      <div className={`${css["flex"]}`}>
+        <div className={`${css["col-2"]}`}>
+          <div className={`${css["box"]} ${css["white-container"]}`}>
+            <div className={`${css["profile"]}`}>
               <img src="jenski_portret.jpg" alt="foto"></img>
               <strong>Тимка Моря </strong>
               {" Начинающая дизайнерка "}
@@ -34,7 +34,7 @@ const Home = () => {
               </a>
             </div>
           </div>
-          <div className={`${css.box_my_2}`}>
+          <div className={`${css["box"]}`}>
             <MyAccordion title={"Navigation"}>
               <Navbar>
                 <Nav style={{ flexDirection: "column" }}>
@@ -77,7 +77,7 @@ const Home = () => {
               </Navbar>
             </MyAccordion>
           </div>
-          <div className={`${css.box_my_2}`}>
+          <div className={`${css["box"]}`}>
             <MyAccordion title={"Share your thoughts"}>
               <FloatingLabel controlId="floatingTextarea2" label="Comments">
                 <Form.Control
@@ -89,8 +89,8 @@ const Home = () => {
             </MyAccordion>
           </div>
         </div>
-        <div className={`stick ${css.boxColumn_2_1}`}>
-          <div className={`${css.box_my_2}`}>
+        <div className={`stick ${css["col-1"]}`}>
+          <div className={`${css["box"]}`}>
             <MyAccordion title={"Title"} date={"5 minutes"}>
               <img src="image 2022.png" alt="foto"></img>
               <>
@@ -99,7 +99,7 @@ const Home = () => {
               </>
             </MyAccordion>
           </div>
-          <div className={`${css.box_my_2}`}>
+          <div className={`${css["box"]}`}>
             <MyAccordion title={"Title"}>
               <img src="image 2022.png" alt="foto"></img>
               <>
@@ -108,7 +108,7 @@ const Home = () => {
               </>
             </MyAccordion>
           </div>
-          <div className={`${css.box_my_2}`}>
+          <div className={`${css["box"]}`}>
             <MyAccordion title={"Title"}>
               <img src="image 2022.png" alt="foto"></img>
               <>
