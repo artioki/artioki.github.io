@@ -5,22 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MyAccordion from "../../MyAccordion/MyAccordion";
 import PropTypes from "prop-types";
 
-const Preloader = ({ is }) => {
-  if (is) {
-    return null;
-  } else {
-    return (
-      <div
-        className={css["icon"]}
-        style={{ margin: "auto", width: "300px", height: "300px" }}
-      >
-        <FontAwesomeIcon
-          className={css["icon-animate"]}
-          icon="fa-solid fa-spinner"
-        />
-      </div>
-    );
-  }
+const Preloader = () => {
+  return (
+    <div
+      className={css["icon"]}
+      style={{ margin: "auto", width: "300px", height: "300px" }}
+    >
+      <FontAwesomeIcon
+        className={css["icon-animate"]}
+        icon="fa-solid fa-spinner"
+      />
+    </div>
+  );
 };
 
 const Maps = () => {
@@ -33,7 +29,7 @@ const Maps = () => {
           <MyAccordion title={"My home"}>
             <YMaps query={{ lang: "en_RU" }}>
               <div>
-                <Preloader is={map} />
+                {!map && <Preloader />}
                 <Map
                   style={{ margin: "auto", width: "300px", height: "300px" }}
                   onLoad={(ymaps) => setmap(true)}

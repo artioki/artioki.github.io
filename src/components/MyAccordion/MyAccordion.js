@@ -1,7 +1,6 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
 import styled from "styled-components";
-import css from "./MyAccordion.module.scss";
 import PropTypes from "prop-types";
 
 const Styles = styled.div`
@@ -24,6 +23,12 @@ const Styles = styled.div`
   .accordion-body {
     padding-top: 0px;
   }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    text-align: center;
+  }
 `;
 
 const MyAccordion = ({ title, date, children }) => {
@@ -32,7 +37,7 @@ const MyAccordion = ({ title, date, children }) => {
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            <div className={css["title"]}>
+            <div className="title">
               <div>{title}</div>
               <div>{date ? date + " ago" : null}</div>
             </div>

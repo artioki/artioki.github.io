@@ -15,9 +15,12 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react", 
+        "prettier"
     ],
     "rules": {
+        "indent": ["error", 2],
+        "prettier/prettier": "error",
         "require-jsdoc" : 0,
         "object-curly-spacing" : 0,
         "quotes": [2, "double", { "avoidEscape": true }]

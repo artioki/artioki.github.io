@@ -9,10 +9,10 @@ export const useRoutes = (isAuthenticatied) => {
   if (isAuthenticatied) {
     return (
       <Routes>
-        <Route path="*" element={<Layout />}>
-          | <Route path="" element={<Home />} exect />
-          <Route path="map" element={<Map />} exect />
-          <Route path="timer" element={<Timer />} exect />
+        <Route path="/" element={<Layout />}>
+          <Route path="" element={<Home />} exact />
+          <Route path="map" element={<Map />} exact />
+          <Route path="timer" element={<Timer />} exact />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
@@ -20,7 +20,7 @@ export const useRoutes = (isAuthenticatied) => {
   }
   return (
     <Routes>
-      <Route path="/" element={<home />} exect />
+      <Route path="" element={<home />} exact />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

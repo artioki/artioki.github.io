@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,26 +18,25 @@ import {
   faListAlt,
 } from "@fortawesome/free-regular-svg-icons";
 
-import { faTwitter, faVk } from "@fortawesome/free-brands-svg-icons";
+import { faVk } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
-    faMap,
-    faNoteSticky,
-    faUser,
-    faListAlt,
-    faBell,
-    faAngleLeft,
-    faAngleDown,
-    faList,
-    faGear,
-    faSpinner,
-    faVk,
-    faTwitter,
+  faMap,
+  faNoteSticky,
+  faUser,
+  faListAlt,
+  faBell,
+  faAngleLeft,
+  faAngleDown,
+  faList,
+  faGear,
+  faSpinner,
+  faVk,
 );
 
 ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById("root"),
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root"),
 );

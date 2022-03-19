@@ -5,41 +5,18 @@ body,
   height: 100%;
 }
 
-#app {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.content {
-  flex: 1 0 auto;
-  padding: 0 20px;
-  background: #f4f7fb;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
-}
-
-
-/* Здесь я переопределял стили bootstrap. так как они импортируются и после используются в компанентах, я не нашел более легкого решения */
-.navbar-light .navbar-nav .nav-link.my-under {
-  border-bottom: 2px solid transparent;
-}
-
-.navbar-light .navbar-nav .nav-link.active.my-under {
-  color: #2375e1;
-  border-bottom: 2px solid #2375e1;
-}
-
-.navbar-light .navbar-nav .nav-link.my-under:hover {
-  color: #2375e1;
-}
-
-.navbar-light .navbar-nav .nav-link.active.my,
-.navbar-light .navbar-nav .nav-link.my:hover {
-  color: #2375e1;
-}

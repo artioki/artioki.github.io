@@ -4,8 +4,8 @@ import css from "./Timer.module.scss";
 
 const Timer = () => {
   return (
-    <div className={css.boxColumn}>
-      <div className={css.box_my}>
+    <div className={css["flex"]}>
+      <div className={css["box"]}>
         <MyTimer />
       </div>
     </div>

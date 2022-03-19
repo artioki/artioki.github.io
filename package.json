@@ -28,6 +28,8 @@
   "scripts": {
     "stylelint": "npx stylelint src/*{.css,.scss}",
     "stylelint:fix": "npx stylelint src/*{.css,.scss} --fix",
+    "prettier":"prettier --check src/**/*.js",
+    "eslint": "eslint src/**/*.js src/**/*.jsx",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
@@ -54,8 +56,11 @@
     ]
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^8.11.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
